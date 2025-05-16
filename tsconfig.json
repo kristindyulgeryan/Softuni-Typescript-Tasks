@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
-    "target": "esnext", // ECMAScript target version
-    "module": "esnext", // module code generation
-    "sourceMap": true, // Generates corresponding .map file
-    "strict": true, // strict type-checking options
-    "outDir": "out" // redirect output to the directory.
-  }
+    "target": "esnext", // Съвременен JavaScript
+    "module": "esnext", // ES модули
+    "strict": true, // Стриктна проверка
+    "sourceMap": true, // За дебъгване с VS Code
+    "rootDir": ".", // Входна директория (текущата)
+    "outDir": "out", // Къде да отиват .js файловете
+    "esModuleInterop": true // За по-добра съвместимост при import
+  },
+  "include": ["**/*.ts"], // Включва всички .ts файлове в поддиректории
+  "exclude": ["node_modules", "out"] // Изключва изходната директория
 }
