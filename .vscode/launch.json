@@ -7,7 +7,28 @@
       "name": "Launch TypeScript File",
       "program": "${workspaceFolder}/out/${relativeFileDirname}/${fileBasenameNoExtension}.js",
       "preLaunchTask": "tsc: build - tsconfig.json",
-      "outFiles": ["${workspaceFolder}/out/**/*.js"]
+      "outFiles": [
+        "${workspaceFolder}/out/**/*.js"
+      ]
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Anjela/Documents/github/Softuni-typescript-tasks/01-ts",
+      "program": "c:/Users/Anjela/Documents/github/Softuni-typescript-tasks/01-ts/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
     }
   ]
 }
