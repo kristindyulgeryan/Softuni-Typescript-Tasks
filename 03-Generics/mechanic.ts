@@ -45,4 +45,4 @@ let maybeCar5 = {
 
 mechanic.technicalInspection(someCar); // ok
 mechanic.technicalInspection(maybeCar2); // ok
-mechanic.technicalInspection(maybeCar4); //TS ERROR
+//mechanic.technicalInspection(maybeCar4); //TS ERROR
